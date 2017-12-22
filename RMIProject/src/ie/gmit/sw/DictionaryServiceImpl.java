@@ -39,8 +39,12 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 			e.printStackTrace();
 		}
 		// TODO Auto-generated method stub
-		
-		return  s;
+		if(s.contains(wrod)) {
+			return "Wrod exist";
+		}
+		else {
+			return "No result";
+			}
 	}
 
 	

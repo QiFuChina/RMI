@@ -9,7 +9,7 @@
 <body>
 <form method="POST" action="execute">
 DictionaryService
-<input id='test' type='text' value='<%%>' placeholder='Enter query here'>
+<input type='text' name="wrod" placeholder='Enter query here'>
 
 <input type ="button" value="Submit" onclick="">
 </form>
