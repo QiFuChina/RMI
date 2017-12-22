@@ -48,5 +48,4 @@ Tool and Environment
 > * Opening cmd and type $ java -cp ./dictionary-service.jar ie.gmit.sw.Server where JAR package locate
 
 
-## Note:Because I have error that make web application cannot connect Tomcat server successful
 
