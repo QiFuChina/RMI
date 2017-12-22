@@ -8,14 +8,17 @@ import java.rmi.server.UnicastRemoteObject;
 
 
 public class DictionaryServiceImpl extends UnicastRemoteObject implements DictionaryService {
-	private String s;
+	private static final long serialVersionUID = 1L;
 	
-	Search word=new Search(s);
+	private String wrod;
+	
+	Search word=new Search(wrod);
 	
 	public DictionaryServiceImpl() throws RemoteException{
 		super();
 	}
 
+	//Read context from local file
 	@Override
 	public byte[] getDictionary(String d) {
 		byte[] bytes = null;
@@ -29,7 +32,14 @@ public class DictionaryServiceImpl extends UnicastRemoteObject implements Dictio
 	
 	@Override
 	public String lookup(String s) throws RemoteException {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
+		
 		return  s;
 	}
 

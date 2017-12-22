@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form method="POST" action="execute">
 DictionaryService
 <input id='test' type='text' value='<%%>' placeholder='Enter query here'>
 
 <input type ="button" value="Submit" onclick="">
+</form>
 </body>
 </html>
